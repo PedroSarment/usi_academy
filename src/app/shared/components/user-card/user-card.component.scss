@@ -30,7 +30,7 @@
   }
   
   .profile-info .level {
-    color: #8A2BE2; /* Roxo */
+    color: #8A2BE2;
     margin: 0;
     font-size: 13px;
   }
@@ -43,10 +43,10 @@
   }
 
   .icon-border {
-    width: 15px; /* Defina a largura da div */
-    height: 15px; /* Defina a altura da div */
-    border: 1px solid var(--ion-color-primary); /* Borda de 1px sólida com cor preta */
-    border-radius: 50%; /* Faz a div ser redonda */
+    width: 15px;
+    height: 15px; 
+    border: 1px solid var(--ion-color-primary);
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
