@@ -1,0 +1,63 @@
+
+<app-header></app-header>
+
+<ion-content [fullscreen]="true" color="dark">
+  <app-user-card></app-user-card>
+
+
+  <div class="home-section">
+    <ion-item color="dark">
+      <ion-text color="light">
+        <h1>PERSONAL ONLINE</h1>
+      </ion-text>
+      <ion-button class="add-training-button" size="small" color="primary" fill="outline" shape="round">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button> 
+    </ion-item>
+    <swiper-container
+      [allowSlidePrev]="true"
+      [slidesPerView]="1.6"
+    >
+      <swiper-slide *ngFor="let slide of personalSlides">
+        <app-training-card [config]="slide"></app-training-card>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <div class="home-section">
+    <ion-item color="dark">
+      <ion-text color="light">
+        <h1>PROGRAMAS</h1>
+      </ion-text>
+      <span>NOVO</span>
+    </ion-item>
+    <swiper-container
+      [allowSlidePrev]="true"
+      [slidesPerView]="1.6"
+    >
+      <swiper-slide *ngFor="let slide of programSlides">
+        <app-training-card [config]="slide"></app-training-card>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <div class="home-section">
+    <ion-item color="dark">
+      <ion-text color="light">
+        <h1>CONTEÚDOS</h1>
+      </ion-text>
+    </ion-item>
+    <swiper-container
+      [allowSlidePrev]="true"
+      [slidesPerView]="1.6"
+    >
+      <swiper-slide>
+        <app-content-card></app-content-card>
+      </swiper-slide>
+      <swiper-slide>
+        <app-content-card></app-content-card>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+   
+</ion-content>
