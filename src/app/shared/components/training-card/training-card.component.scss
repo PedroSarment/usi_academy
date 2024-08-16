@@ -1,0 +1,70 @@
+ion-card {
+    //padding-top: 25%;
+    border-radius: 8%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 155px;
+}
+
+.new-training {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+ion-card.has-new-training-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 8%;
+    pointer-events: none;
+}
+
+.card-training {
+    display: flex;
+    height: 100%;
+    justify-content: end;
+}
+
+ion-card-title {
+    --color: var(--ion-color-light);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+ion-card-subtitle {
+    --color: var(--ion-color-primary);
+}
+
+.new-button-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ion-color-dark)
+}
+
+ion-button {
+    text-align: justify;
+
+.icon-border {
+    width: 40px; 
+    height: 40px; 
+    border: 1px solid var(--ion-color-light); 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    margin-right: 5px;
+    padding: 8px;
+
+    ion-icon {
+        font-size: 30px;
+    }
+  }
+}

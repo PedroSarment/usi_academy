@@ -1,0 +1,18 @@
+
+<ion-card 
+  [ngClass]="{'has-new-training-link': config.newTrainingLink}"
+  [ngStyle]="{'--background': 'url(' + config.image + ') no-repeat center center/cover'}"
+  >
+  <ion-card-header *ngIf="config.newTrainingLink" class="new-training" style="display: flex;">
+    <ion-button fill="clear" size="large" color="light">
+      <div class="icon-border">
+        <ion-icon slot="start" name="add" color="light"></ion-icon>
+      </div>
+      NOVO<br>TREINO
+    </ion-button>
+  </ion-card-header>
+  <ion-card-header class="card-training"  *ngIf="!config.newTrainingLink">
+    <ion-card-subtitle>{{ config.subtitle }}</ion-card-subtitle>
+    <ion-card-title>{{ config.title }}</ion-card-title>
+  </ion-card-header>
+</ion-card>
