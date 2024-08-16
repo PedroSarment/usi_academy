@@ -1,0 +1,31 @@
+
+ion-toolbar{
+    --padding-top: 15px;
+    --padding-bottom: 10px;
+
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .logo {
+            width: 75px;
+        }
+    }
+
+    .notification-button-container {
+        display: flex;
+        padding-right: 15px;
+        .notification-button {
+            box-shadow: 0px 0px 8px 4px rgba(49, 49, 49, 0.5);
+            border-radius: 100%;
+            
+            ion-icon {
+                font-size: small;
+                padding: 0 2px;
+            }
+        }   
+    }
+
+}
